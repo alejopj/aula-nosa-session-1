@@ -242,4 +242,42 @@ public class EnigmaTest {
 		Assert.assertEquals(expected, decrypted);
 	}
 	
+	/**
+	 * Given an alphabet
+	 * And a text with characters not contained in the alphabet
+	 * And a rotation
+	 * When the text is encrypted
+	 * Then the provided text is returned
+	 */
+	@Test
+	public void encryptTextWithUnknownCharacters() {
+		
+		String alphabet = ALPHABET;
+		Enigma enigma = new Enigma(alphabet);
+		String text = DECRYPTED_TEXT + "ñ";
+		Integer rotation = ROTATION;
+		String encrypted = enigma.encrypt(text, rotation);
+		String expected = text;
+		Assert.assertEquals(expected, encrypted);
+	}
+	
+	/**
+	 * Given an alphabet
+	 * And a text with characters not contained in the alphabet
+	 * And a rotation
+	 * When the text is decrypted
+	 * Then the provided text is returned
+	 */
+	@Test
+	public void decryptTextWithUnknownCharacters() {
+		
+		String alphabet = ALPHABET;
+		Enigma enigma = new Enigma(alphabet);
+		String text = ENCRYPTED_TEXT + "ñ";
+		Integer rotation = ROTATION;
+		String decrypted = enigma.decrypt(text, rotation);
+		String expected = text;
+		Assert.assertEquals(expected, decrypted);
+	}
+	
 }
