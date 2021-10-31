@@ -8,7 +8,7 @@ public class EnigmaTest {
 	private static final String ALPHABET = " ,.ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	private static final String DECRYPTED_TEXT = "We can only see a short distance ahead, but we can see plenty there that needs to be done.";
 	private static final Integer ROTATION = 3;
-	private static final String ENCRYPTED_TEXT = "";
+	private static final String ENCRYPTED_TEXT = "ZhAfdqArqo,AvhhAdAvkruwAglvwdqfhAdkhdgBAexwAzhAfdqAvhhAsohqw,AwkhuhAwkdwAqhhgvAwrAehAgrqhC";
 
 	/* Happy path */
 	
