@@ -22,7 +22,7 @@ public class CalculatorTest {
 		Double a = 5.0;
 		Double b = 3.0;
 		Double addition = calculator.add(a, b);
-		Assert.assertTrue(addition == 8.0);
+		Assert.assertTrue(addition.equals(8.0));
 	}
 	
 	/**
@@ -37,7 +37,7 @@ public class CalculatorTest {
 		Double a = 5.0;
 		Double b = 3.0;
 		Double subtraction = calculator.subtract(a, b);
-		Assert.assertTrue(subtraction == 2.0);
+		Assert.assertTrue(subtraction.equals(2.0));
 	}
 	
 	/**
@@ -52,7 +52,7 @@ public class CalculatorTest {
 		Double a = 5.0;
 		Double b = 3.0;
 		Double multiplication = calculator.multiply(a, b);
-		Assert.assertTrue(multiplication == 15.0);
+		Assert.assertTrue(multiplication.equals(15.0));
 	}
 	
 	/**
@@ -67,7 +67,7 @@ public class CalculatorTest {
 		Double a = 12.0;
 		Double b = 3.0;
 		Double division = calculator.divide(a, b);
-		Assert.assertTrue(division == 4.0);
+		Assert.assertTrue(division.equals(4.0));
 	}
 	
 	/**
@@ -144,7 +144,7 @@ public class CalculatorTest {
 		Double a = null;
 		Double b = null;
 		Double addition = calculator.add(a, b);
-		Assert.assertTrue(addition == 0.0);
+		Assert.assertTrue(addition.equals(0.0));
 	}
 	
 	/**
@@ -159,7 +159,7 @@ public class CalculatorTest {
 		Double a = null;
 		Double b = null;
 		Double subtraction = calculator.subtract(a, b);
-		Assert.assertTrue(subtraction == 0.0);
+		Assert.assertTrue(subtraction.equals(0.0));
 	}
 	
 	/**
@@ -174,7 +174,7 @@ public class CalculatorTest {
 		Double a = null;
 		Double b = null;
 		Double multiplication = calculator.multiply(a, b);
-		Assert.assertTrue(multiplication == 0.0);
+		Assert.assertTrue(multiplication.equals(0.0));
 	}
 	
 	/**
@@ -206,7 +206,7 @@ public class CalculatorTest {
 		Double a = null;
 		Double b = 3.0;
 		Double addition = calculator.add(a, b);
-		Assert.assertTrue(addition == b);
+		Assert.assertTrue(addition.equals(b));
 	}
 	
 	/**
@@ -223,7 +223,7 @@ public class CalculatorTest {
 		Double a = 5.0;
 		Double b = null;
 		Double subtraction = calculator.subtract(a, b);
-		Assert.assertTrue(subtraction == 5.0);
+		Assert.assertTrue(subtraction.equals(5.0));
 	}
 	
 	/**
@@ -240,7 +240,7 @@ public class CalculatorTest {
 		Double a = null;
 		Double b = 3.0;
 		Double subtraction = calculator.subtract(a, b);
-		Assert.assertTrue(subtraction == -3.0);
+		Assert.assertTrue(subtraction.equals(-3.0));
 	}
 	
 	/**
@@ -257,7 +257,7 @@ public class CalculatorTest {
 		Double a = null;
 		Double b = 3.0;
 		Double multiplication = calculator.multiply(a, b);
-		Assert.assertTrue(multiplication == 0.0);
+		Assert.assertTrue(multiplication.equals(0.0));
 	}
 	
 	/**
@@ -274,7 +274,7 @@ public class CalculatorTest {
 		Double a = null;
 		Double b = 3.0;
 		Double division = calculator.divide(a, b);
-		Assert.assertTrue(division == 0.0);
+		Assert.assertTrue(division.equals(0.0));
 	}
 	
 	/**
@@ -291,7 +291,7 @@ public class CalculatorTest {
 		Double a = 12.0;
 		Double b = null;
 		Double division = calculator.divide(a, b);
-		Assert.assertTrue(division == Double.MAX_VALUE);
+		Assert.assertTrue(division.equals(Double.MAX_VALUE));
 	}
 	
 	/**
@@ -307,7 +307,7 @@ public class CalculatorTest {
 		Double a = 12.0;
 		Double b = 0.0;
 		Double division = calculator.divide(a, b);
-		Assert.assertTrue(division == Double.MAX_VALUE);
+		Assert.assertTrue(division.equals(Double.MAX_VALUE));
 	}
 	
 }
